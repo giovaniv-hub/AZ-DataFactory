@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "dt_src_azblob_files",
+						"referenceName": "dt_src_azblob_files_metadados",
 						"type": "DatasetReference"
 					},
 					"fieldList": [
@@ -68,7 +68,7 @@
 									"type": "DelimitedTextSource",
 									"storeSettings": {
 										"type": "AzureBlobStorageReadSettings",
-										"fileListPath": "tlmlb2c/sourceFiles",
+										"recursive": true,
 										"enablePartitionDiscovery": false
 									},
 									"formatSettings": {
@@ -99,7 +99,13 @@
 							"inputs": [
 								{
 									"referenceName": "dt_src_azblob_files",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"srcFileNames": {
+											"value": "@item().childItems.name",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [
@@ -108,7 +114,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"fileName": {
-											"value": "@item().",
+											"value": "@item().childItems.name",
 											"type": "Expression"
 										}
 									}
