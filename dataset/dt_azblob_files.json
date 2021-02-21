@@ -5,6 +5,11 @@
 			"referenceName": "ls_azblog_srcFiles",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"folderPath": {
+				"type": "string"
+			}
+		},
 		"folder": {
 			"name": "azBlobStorage"
 		},
