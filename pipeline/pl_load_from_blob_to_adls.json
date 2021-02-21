@@ -46,7 +46,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('get_file_name').output.value",
+						"value": "@activity('get_file_name').output.childItems",
 						"type": "Expression"
 					},
 					"isSequential": true,
@@ -102,7 +102,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"srcFileNames": {
-											"value": "@item().childItems.name",
+											"value": "@item().name",
 											"type": "Expression"
 										}
 									}
@@ -114,7 +114,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"fileName": {
-											"value": "@item().childItems.name",
+											"value": "@item().name",
 											"type": "Expression"
 										}
 									}
