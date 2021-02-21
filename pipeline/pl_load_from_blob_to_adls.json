@@ -105,7 +105,13 @@
 							"outputs": [
 								{
 									"referenceName": "dt_tgt_adls_files",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"fileName": {
+											"value": "@item().",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
