@@ -1,5 +1,5 @@
 {
-	"name": "dt_src_azblob_files_copy1",
+	"name": "dt_src_azblob_files_metadados",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_azblog_srcFiles",
