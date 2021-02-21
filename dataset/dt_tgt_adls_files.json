@@ -1,0 +1,22 @@
+{
+	"name": "dt_tgt_adls_files",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_azadls_tgtFiles",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
