@@ -5,11 +5,20 @@
 			"referenceName": "ls_azblog_srcFiles",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"srcFileNames": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().srcFileNames",
+					"type": "Expression"
+				},
 				"folderPath": "sourceFiles",
 				"container": "tlmlb2c"
 			},
