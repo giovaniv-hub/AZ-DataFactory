@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Get Metadata",
+				"name": "Get File Name",
 				"type": "GetMetadata",
 				"dependsOn": [],
 				"policy": {
@@ -37,7 +37,7 @@
 				"type": "ForEach",
 				"dependsOn": [
 					{
-						"activity": "Get Metadata",
+						"activity": "Get File Name",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -45,6 +45,11 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@activity('Get File Name').output.value",
+						"type": "Expression"
+					},
+					"isSequential": true,
 					"activities": [
 						{
 							"name": "Copy Files from Blog",
