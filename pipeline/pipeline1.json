@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "dt_src_azblob_files",
+						"referenceName": "dt_src_azblob_files_copy1",
 						"type": "DatasetReference"
 					},
 					"fieldList": [],

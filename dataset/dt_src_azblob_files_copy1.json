@@ -5,11 +5,6 @@
 			"referenceName": "ls_azblog_srcFiles",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"srcFileNames": {
-				"type": "string"
-			}
-		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
