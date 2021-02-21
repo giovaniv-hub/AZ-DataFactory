@@ -1,0 +1,22 @@
+{
+	"name": "ds_src_az_blob_files",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_az_blog_files_poc",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "tlmlb2c"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
