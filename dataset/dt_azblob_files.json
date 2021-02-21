@@ -1,0 +1,25 @@
+{
+	"name": "dt_azblob_files",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_azblog_srcFiles",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "azBlobStorage"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "sourceFiles",
+				"container": "tlmlb2c"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
