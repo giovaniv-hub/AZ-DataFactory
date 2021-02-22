@@ -1,0 +1,12 @@
+{
+	"name": "df_prep_data_to_ml",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [],
+			"sinks": [],
+			"transformations": [],
+			"script": ""
+		}
+	}
+}
