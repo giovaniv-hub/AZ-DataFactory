@@ -22,7 +22,7 @@
 				"fileSystem": "raw"
 			},
 			"columnDelimiter": ";",
-			"encodingName": "UTF-8",
+			"encodingName": "US-ASCII",
 			"escapeChar": "\\",
 			"quoteChar": ""
 		},
