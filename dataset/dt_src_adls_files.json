@@ -21,7 +21,8 @@
 				},
 				"fileSystem": "raw"
 			},
-			"columnDelimiter": ",",
+			"columnDelimiter": ";",
+			"encodingName": "UTF-16",
 			"escapeChar": "\\",
 			"quoteChar": "\""
 		},
