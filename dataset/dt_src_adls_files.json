@@ -24,7 +24,7 @@
 			"columnDelimiter": ";",
 			"encodingName": "UTF-16",
 			"escapeChar": "\\",
-			"quoteChar": "\""
+			"quoteChar": ""
 		},
 		"schema": []
 	}
