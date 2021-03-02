@@ -1,0 +1,22 @@
+{
+	"name": "dt_adls_databricks_files",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_databricks_files",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "tables",
+				"fileSystem": "filestore"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
