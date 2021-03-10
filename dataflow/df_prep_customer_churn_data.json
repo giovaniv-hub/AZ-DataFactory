@@ -1,5 +1,5 @@
 {
-	"name": "df_prep_data_to_ml",
+	"name": "df_prep_customer_churn_data",
 	"properties": {
 		"type": "MappingDataFlow",
 		"typeProperties": {
