@@ -10,11 +10,12 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "tables",
-				"fileSystem": "filestore"
+				"fileName": "POC_PERFIL_CL.txt",
+				"fileSystem": "landing"
 			},
-			"columnDelimiter": ",",
+			"columnDelimiter": ";",
 			"escapeChar": "\\",
+			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
 		"schema": []
