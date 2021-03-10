@@ -1,14 +1,12 @@
 {
-	"name": "dt_adls_databricks_files",
+	"name": "dt_src_PerfilCL",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_adls_databricks_files",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"fileName": {
-				"type": "string"
-			}
+		"folder": {
+			"name": "poc_churn"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
@@ -23,6 +21,11 @@
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": []
+		"schema": [
+			{
+				"name": "DT_FOTO;ID_LNHA;ID_PSSA;IDADE;ID_SEXO;TEMPO_RELAC;FL_TIT;FL_CONTA_ONLINE;NR_CEP;UF;CIDADE;RENDA_CALC;TP_CLIENTE;MEDIA_FATUR;SEGMENTACAO;SGTO_VV",
+				"type": "String"
+			}
+		]
 	}
 }

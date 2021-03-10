@@ -1,21 +1,19 @@
 {
-	"name": "dt_adls_databricks_files",
+	"name": "dt_src_DtChurn",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_adls_databricks_files",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"fileName": {
-				"type": "string"
-			}
+		"folder": {
+			"name": "poc_churn"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "POC_PERFIL_CL.txt",
+				"fileName": "POC_DT_CHURN.txt",
 				"fileSystem": "landing"
 			},
 			"columnDelimiter": ";",
@@ -23,6 +21,11 @@
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": []
+		"schema": [
+			{
+				"name": "ID_PSSA;FL_CHURN;DT_REF_CHURN;FLG_PRTB",
+				"type": "String"
+			}
+		]
 	}
 }
