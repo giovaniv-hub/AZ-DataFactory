@@ -9,12 +9,19 @@
 						"referenceName": "dt_src_adls_files",
 						"type": "DatasetReference"
 					},
-					"name": "Perfil"
+					"name": "PocPerfilClient"
+				},
+				{
+					"name": "SrcDtChurn"
 				}
 			],
 			"sinks": [],
-			"transformations": [],
-			"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false) ~> Perfil"
+			"transformations": [
+				{
+					"name": "LkpDtChurn"
+				}
+			],
+			"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false) ~> PocPerfilClient\nsource(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false) ~> SrcDtChurn\nPocPerfilClient, SrcDtChurn lookup(ERROR_FUNCTION('') == ERROR_FUNCTION(''),\n\tmultiple: false,\n\tpickup: 'any',\n\tbroadcast: 'auto')~> LkpDtChurn"
 		}
 	}
 }
